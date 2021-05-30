@@ -10,7 +10,8 @@ import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles({
     appBar: {
-        boxShadow: 'none'
+        boxShadow: 'none',
+
     },
     img: {
         maxHeight: 55,
@@ -34,7 +35,7 @@ function Header() {
 
 const classes = useStyles();
     return (
-        <AppBar position="fixed" color="inherit" className={classes.appBar}> 
+        <AppBar color="inherit" className={classes.appBar}> 
             <Toolbar>
                 <img src="/images/logo.png" alt="logo" className={classes.img}/>
                <div className={classes.grow}></div>
@@ -47,17 +48,7 @@ const classes = useStyles();
                     </SvgIcon>
                     <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
                 </div>
-                {/* <div>
-                    <a href="#">Conecta Dev - Alteração</a>
-                    <input type="text"></input>
-                </div>
-                <div>
-                    <Button variant="contained" color="primary">
-                        novo post
-                    </Button>
-                    <span>img1</span>
-                    <span>img2</span>
-                </div> */}
+
             </Toolbar>
         </AppBar>
     );
